@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model FinanaceApp.Models.Expense
+
+<div class="container">
+
+    <h2>Add Expenses</h2>
+    <form asp-action="Create" method="post">
+        <div>
+
+            <label asp-for="Description" class="form-label"></label>
+            <input asp-for="Description" class="form-control" />
+
+        </div>
+
+        <div>
+
+            <label asp-for="Amount" class="form-label"></label>
+            <input asp-for="Amount" class="form-control" />
+
+        </div>
+
+
+        <div>
+
+            <label asp-for="Category" class="form-label"></label>
+            <input asp-for="Category" class="form-control" />
+
+        </div>
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+    </form>
+</div>
