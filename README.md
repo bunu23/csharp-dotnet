@@ -5,10 +5,7 @@
 ## How to Run
 
 1. Install the **.NET SDK** from [here](https://dotnet.microsoft.com/download).
-2. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/csharp-dotnet-learning.git
-   ```
+2. Clone this repository
 3. Run any project with:
    ```bash
    dotnet run
