@@ -101,3 +101,53 @@ Console.Write(messages);
 Console.Write(" messages in your inbox. The temperature is ");
 Console.Write(temperature);
 Console.Write(" celsius.");
+
+
+
+/*
+character escape sequences:
+- Use character escape sequences when you need to insert a special character into a literal string, like a tab \t, new line \n, or a double quotation mark \".
+- Use an escape character for the backslash \\ when you need to use a backslash in all other scenarios.
+- Use the @ directive to create a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.
+- Use the \u plus a four-character code to represent Unicode characters (UTF-16) in a string.
+- Unicode characters may not print correctly depending on the application.
+
+*/
+Console.WriteLine("Hello, \nworld!"); // This will print "Hello," on one line and "world!" on the next line.
+Console.WriteLine("Hello, \tworld!"); // This will print "Hello," followed by a tab space and then "world!" on the same line.
+
+//Console.WriteLine("Hello "World"!"); // This will cause a compilation error because the double quotes around "World" are not escaped. Correct way to include double quotes in a string is Console.WriteLine("Hello \"World\"!")
+Console.WriteLine("Hello \"World\"!"); // This will print Hello "World"!
+
+Console.WriteLine("c:\\source\\project"); // This will print c:\source\project
+
+
+// Exercies: create the mockup of the command line tool
+Console.WriteLine("Generating invoices for customer \"Customer A\"...");
+Console.WriteLine("Invoice 1: $100.00 \t completed!");
+Console.WriteLine("Invoice 2: $200.00 \t completed!");
+Console.WriteLine("\n All invoices for customer \"Customer A\" have been generated successfully!");
+
+//Verbatim string literal - A verbatim string literal will keep all whitespace and characters without the need to escape the backslash. To create a verbatim string, use the @ directive before the literal string.
+Console.WriteLine(@"Generating invoices for customer ""Customer A""...");// This will print Generating invoices for customer "Customer A"...
+Console.Write(@"c:\invoices");
+
+// String Concatenation
+string firstName = "Bob"; // This declares a variable firstName and initializes it with the value "Bob".
+string message = "Hello " + firstName; // This will concatenate the string "Hello " with the value of firstName, resulting in "Hello Bob".
+Console.WriteLine(message); // This will print "Hello Bob" to the console.
+
+// String Interpolation - String interpolation combines multiple values into a single literal string by using a "template" and one or more interpolation expressions. An interpolation expression is indicated by an opening and closing curly brace symbol { }.
+
+string message = $" Hello , {firstName}!"; //// This will create a string that includes the value of firstName, resulting in "Hello, Bob!".
+Console.WriteLine(message); // This will print "Hello, Bob!" to the console.
+
+// String Interpolation with multiple variables
+string lastName = "smith";
+string fullName = $"{firstName} {lastName}"; // This will create a string that includes the values of firstName and lastName, resulting in "Bob Smith".
+Console.WriteLine(fullName);// This will print "Bob Smith" to the console.
+
+// Combine verbatim literals and string interpolation
+string projectName = "My Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
+
