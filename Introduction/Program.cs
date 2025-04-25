@@ -151,3 +151,85 @@ Console.WriteLine(fullName);// This will print "Bob Smith" to the console.
 string projectName = "My Project";
 Console.WriteLine($@"C:\Output\{projectName}\Data");
 
+
+//Perform basic operations on numbers in C# 
+//Exercise - Perform addition with implicit data conversion
+
+int firstNumber = 12; // This declares a variable firstNumber and initializes it with the value 12.
+// Implicit data conversion allows you to combine different numeric types in an expression without needing to explicitly convert them.
+int secondNumber = 3; // This declares a variable secondNumber and initializes it with the value 3.
+Console.WriteLine(firstNumber + secondNumber); // This will print the result of adding firstNumber and secondNumber, which is 15.
+
+string firstName = "Bob";
+int widgetsSold = 17;
+Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets."); // This will print "Bob sold 177 widgets." because the integer 7 is implicitly converted to a string and concatenated with the other strings.
+
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets."); // This will print "Bob sold 14 widgets." because the parentheses ensure that the addition is performed before the concatenation, resulting in the correct total of widgets sold.
+
+//Exercise - Perform math operations
+
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
+
+Console.WriteLine("Sum: " + sum); //    This will print "Sum: 12"
+Console.WriteLine("Difference: " + difference); // This will print "Difference: 2"
+Console.WriteLine("Product: " + product); // This will print "Product: 35"
+Console.WriteLine("Quotient: " + quotient);     // This will print "Quotient: 1" because integer division truncates the decimal part.
+
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine($"Decimal quotient: {decimalQuotient}"); // This will print "Decimal quotient: 1.4" because the decimal type allows for fractional values.
+
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient); // This will print "1.4" because both first and second are explicitly cast to decimal before the division, allowing for a precise decimal result.
+
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}"); // This will print "0" because 200 divided by 5 leaves no remainder.
+Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}"); // This will print "2" because 7 divided by 5 leaves a remainder of 2.
+
+int value1 = 3 + 4 * 5;
+int value2 = (3 + 4) * 5;
+Console.WriteLine(value1); // This will print "23" because multiplication is performed before addition, so 4*5 is calculated first, resulting in 20, and then 3 is added to it.
+Console.WriteLine(value2); // This will print "23" and "35" respectively, demonstrating the order of operations where multiplication is performed before addition unless parentheses are used to change the order.
+
+//Exercise - Increment and decrement values
+int value = 0;   // This declares a variable value and initializes it with the value 0.
+value = value + 5; // This adds 5 to the current value of value, resulting in value being 5.
+value += 5; // This is a shorthand way to add 5 to value, resulting in value being 10.
+
+
+int value = 1;
+value = value + 1;
+Console.WriteLine("first increment : " + value);
+value += 1;
+Console.WriteLine("second increment : " + value);
+value++;
+Console.WriteLine("third increment: " + value);
+value = value - 1;
+Console.WriteLine("first decrement: " + value);
+value -= 1;
+Console.WriteLine("second decrement : " + value);
+value--;
+Console.WriteLine("third decrement: " + value);
+
+int value = 1; // This declares a variable value and initializes it with the value 1.
+value++; // This increments the value by 1, so value becomes 2.
+Console.WriteLine("first: " + value); //    This will print "first: 2"
+Console.WriteLine($"Second: {value++}"); // This will print "Second: 2" and then increment value to 3.
+Console.WriteLine("second: " + value); // This will print "second: 3"
+value += 1; // This is another way to increment value by 1, so value becomes 4.
+Console.WriteLine("third: " + value);   // This will print "third: 4"
+value = 3; // This declares a variable value and initializes it with the value 3.
+Console.WriteLine("fourth: " + (++value));  // This will print "fourth: 4" because the increment operator is used before the variable, so value is incremented to 4 before being printed.
+
+
+//  Calculate Celsius given the current temperature in Fahrenheit
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius."); //    This will print "The temperature is 34.4444444444444 Celsius." because the formula for converting Fahrenheit to Celsius is applied correctly.
+
+
