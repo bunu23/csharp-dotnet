@@ -32,3 +32,62 @@ int firstValue = 10;
 int secondValue = 20;
 int largerValue = Math.Max(firstValue, secondValue);
 Console.WriteLine($"The larger value between {firstValue} and {secondValue} is {largerValue}.");
+
+
+// CREATE A DECISION LOGIC WITH if-else STATEMENT
+if (largerValue > 15)
+{
+    Console.WriteLine("The larger value is greater than 15.");
+}
+else
+{
+    Console.WriteLine("The larger value is less than or equal to 15.");
+}
+
+// BOOLEAN EXPRESSION
+string message = "The quick brown fox jumps over the lazy dog.";
+bool containsFox = message.Contains("fox");
+Console.WriteLine($"Does the message contain 'fox'? {containsFox}");
+
+bool result = message.Contains("dog");
+Console.WriteLine(result);
+if (message.Contains("fox"))
+{
+    Console.WriteLine("What a clever fox!");
+}
+
+
+// continue the dice example by adding nested decisiion logic with if , else if, and else statements
+
+int roll4 = dice.Next(1, 7);
+int roll5 = dice.Next(1, 7);
+int roll6 = dice.Next(1, 7);
+int total = roll4 + roll5 + roll6;
+Console.WriteLine($" You rolled a {roll4}, {roll5}, and {roll6} on the dice! Total: {total}");
+
+if ((roll4 == roll5) || (roll5 == roll6) || (roll4 == roll6))
+{
+    if ((roll4 == roll5) && (roll5 == roll6))
+    {
+        Console.WriteLine("You rolled triples! +5 bonus to total");
+        total += 6;
+    }
+    else
+    {
+        Console.WriteLine("You rolled doubles! +2 bonus to toal");
+        total += 2;
+    }
+}
+
+if (total >= 15)
+{
+    Console.WriteLine("you win a package of chips!");
+}
+else if (total == 30)
+{
+    Console.WriteLine("You win a trip for two to Hawaii!");
+}
+else
+{
+    Console.WriteLine("yo win a  prize of a candy bar!");
+}
