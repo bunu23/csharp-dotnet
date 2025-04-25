@@ -232,4 +232,35 @@ int fahrenheit = 94;
 decimal celsius = (fahrenheit - 32m) * (5m / 9m);
 Console.WriteLine("The temperature is " + celsius + " Celsius."); //    This will print "The temperature is 34.4444444444444 Celsius." because the formula for converting Fahrenheit to Celsius is applied correctly.
 
+// Increment and Decrement Operators
+int number = 5;
 
+Console.WriteLine("Original number: " + number);
+
+// Increment the number by 1 (using ++ operator)
+number++;
+Console.WriteLine("After incrementing by 1: " + number);
+
+// Decrement the number by 1 (using -- operator)
+number--;
+Console.WriteLine("After decrementing by 1: " + number);
+
+// Increment the number by 5 (using += operator)
+number += 5;
+Console.WriteLine("After incrementing by 5: " + number);
+
+// Decrement the number by 2 (using -= operator)
+number -= 2;
+Console.WriteLine("After decrementing by 2: " + number);
+
+// Pre-increment example
+int a = 10;
+int b = ++a; // First increment a, then assign to b
+Console.WriteLine("\nPre-increment:");
+Console.WriteLine("a = " + a + ", b = " + b);
+
+// Post-increment example
+int x = 10;
+int y = x++; // First assign x to y, then increment x
+Console.WriteLine("\nPost-increment:");
+Console.WriteLine("x = " + x + ", y = " + y);
