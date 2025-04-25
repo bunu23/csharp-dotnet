@@ -126,3 +126,6 @@ if (discountPercentage > 0)
     Console.WriteLine($"Renew now and save {discountPercentage}%.");
 }
 
+//Store and Iterate Through Sequences of Data Using Arrays and the foreach Statement in C#
+// GETTING STARTED WITH ARRAYS
+
