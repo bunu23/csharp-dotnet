@@ -1,0 +1,15 @@
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/bin/Debug/net9.0/project-calculate-print-student-grades
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/bin/Debug/net9.0/project-calculate-print-student-grades.deps.json
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/bin/Debug/net9.0/project-calculate-print-student-grades.runtimeconfig.json
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/bin/Debug/net9.0/project-calculate-print-student-grades.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/bin/Debug/net9.0/project-calculate-print-student-grades.pdb
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.AssemblyInfoInputs.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.AssemblyInfo.cs
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.csproj.CoreCompileInputs.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.sourcelink.json
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/refint/project-calculate-print-student-grades.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.pdb
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/project-calculate-print-student-grades.genruntimeconfig.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/project-calculate-print-student-grades/obj/Debug/net9.0/ref/project-calculate-print-student-grades.dll

@@ -1,0 +1,15 @@
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.AssemblyInfoInputs.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.AssemblyInfo.cs
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.csproj.CoreCompileInputs.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.sourcelink.json
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/bin/Debug/net9.0/Introduction
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/bin/Debug/net9.0/Introduction.deps.json
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/bin/Debug/net9.0/Introduction.runtimeconfig.json
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/bin/Debug/net9.0/Introduction.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/bin/Debug/net9.0/Introduction.pdb
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/refint/Introduction.dll
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.pdb
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/Introduction.genruntimeconfig.cache
+/Users/bunubhattarai/Desktop/dotnet-basic/Introduction/obj/Debug/net9.0/ref/Introduction.dll
