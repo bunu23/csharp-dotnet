@@ -126,18 +126,25 @@ if (discountPercentage > 0)
     Console.WriteLine($"Renew now and save {discountPercentage}%.");
 }
 
+// Getting  Started with Array
 //Store and Iterate Through Sequences of Data Using Arrays and the foreach Statement in C#
-// getting started with arrays
 
-string[] fraudulentOrderIDs = ["A123", "B456", "C789"];
+string[] fradulentOrderIDs = new string[3]; // Declare an array of strings with a size of 3
+fradulentOrderIDs[0] = "12345";// Assign a value to the first element of the array
+fradulentOrderIDs[1] = "67890";// Assign a value to the second element of the array
+fradulentOrderIDs[2] = "54321";// Assign a value to the third element of the array
+Console.WriteLine($"first:{fradulentOrderIDs[0]}");// Access and print the first element of the array
+Console.WriteLine($"second:{fradulentOrderIDs[1]}");// Access and print the second element of the array
+Console.WriteLine($"third:{fradulentOrderIDs[2]}");// Access and print the third element of the array
+fradulentOrderIDs[1] = "11111"; // Update the second element of the array
+Console.WriteLine($"Updated second:{fradulentOrderIDs[1]}");// Access and print the updated second element of the array
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+//You can initialize an array during declaration just like you would a regular variable.
+string[] orderIDs = ["12345", "67890", "54321"]; // Declare and initialize an array of strings with three elements
+Console.WriteLine($"first:{orderIDs[0]}");// Access and print the first element of the array
+Console.WriteLine($"second:{orderIDs[1]}");// Access and print the second element of the array
+Console.WriteLine($"third:{orderIDs[2]}");// Access and print the third element of the array
 
-fraudulentOrderIDs[0] = "F000";
+Console.WriteLine($"The length of the array is{orderIDs.Length}");// Print the length of the array
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-
-Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
 
