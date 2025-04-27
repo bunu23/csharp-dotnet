@@ -148,3 +148,21 @@ Console.WriteLine($"third:{orderIDs[2]}");// Access and print the third element 
 Console.WriteLine($"The length of the array is{orderIDs.Length}");// Print the length of the array
 
 
+/*
+Exercise - Implement the foreach statement
+Suppose you work for a manufacturing company. The company needs you to complete an inventory of your warehouse to determine the number of products that are ready to ship. In addition to the total number of finished products, you need to report the number of finished products stored in each individual bin in your warehouse, along with a running total. This running total will be used to create an audit trail so you can double-check your work and identify "shrinkage".
+*/
+
+int[] inventory = { 200, 100, 150, 75, 50, 25, 10, 5, 1 }; // create an array of type int to store the number of finished products in each bin
+int sum = 0;
+int bin = 0;
+//iterate throught the array
+foreach (int items in inventory)
+{
+    sum += items; // add the current value stored in the items to the sum variable
+    bin++;
+    Console.WriteLine($"Bin {bin} ={items}(Running total:{sum})");
+}
+Console.WriteLine($"We have {sum} items in inventory.");
+
+
