@@ -14,13 +14,11 @@ string[] studentNames = new string[]{
 int[] studentScores = new int[10];
 string currentStudentLetterGrade = "";
 
-Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Student\t\tExam Score\tOverall Grade\tExtra Credit\n");
 
 foreach (string name in studentNames)
 {
     string currentStudent = name;
-
-
     if (currentStudent == "Sophia")
         studentScores = sophiaScores;
     else if (currentStudent == "Andrew")
@@ -31,21 +29,38 @@ foreach (string name in studentNames)
         studentScores = loganScores;
 
     int sumAssignmentScores = 0;
-    decimal currentStudentGrade = 0;
+    int sumExtraCreditScores = 0;
+
+
     int gradedAssignments = 0;
+    int gradedExtraCreditAssignments = 0;
+
+
+    decimal currentStudentGrade = 0;
+    decimal currentStudentExamScore = 0;
+    decimal currentStudentExtraCreditScore = 0;
+
+
+
     foreach (int score in studentScores)
     {
         gradedAssignments += 1;
         if (gradedAssignments <= examAssignments)
+        {
             sumAssignmentScores += score;
+        }
         else
-            sumAssignmentScores += score / 10;
+        {
+            sumExtraCreditScores += score;
+            gradedExtraCreditAssignments += 1;
+        }
     }
 
 
 
-    currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
-
+    currentStudentExamScore = (decimal)sumAssignmentScores / examAssignments;
+    currentStudentExtraCreditScore = (decimal)sumExtraCreditScores / gradedExtraCreditAssignments;
+    currentStudentGrade = (decimal)((decimal)sumAssignmentScores + ((decimal)sumExtraCreditScores / 10)) / examAssignments;
 
     if (currentStudentGrade >= 97)
         currentStudentLetterGrade = "A+";
@@ -86,7 +101,7 @@ foreach (string name in studentNames)
     else
         currentStudentLetterGrade = "F";
 
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentExamScore}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCreditScore} ({(((decimal)sumExtraCreditScores / 10) / examAssignments)} pts)");
 }
 
 
